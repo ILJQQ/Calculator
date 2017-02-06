@@ -1,0 +1,95 @@
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: #35b558;
+}
+.calculator{
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -130px;
+    margin-top: -160px;
+    border-radius: 5px 5px 3px 3px;
+    overflow: hidden;
+}
+table{
+    border: #8e8e8e;
+    border-collapse: collapse;
+}
+
+td{
+    text-align: center;
+    width:60px;
+    height:50px;
+    padding: 0;
+    margin: 0;
+}
+#result{
+    height:100px;
+}
+/*设置显示窗口字体,大小,背景等*/
+#resultNum{
+    display: block;
+    width:260px;
+    height: 100px;
+    background-color: #999;
+    color: #fff;
+    text-align: right;
+    font-size: 56px;
+    overflow-y: visible;
+    line-height: 120px;
+    text-indent: 10px;
+    font-family: "PingFang SC";
+    font-weight: lighter;
+    opacity: 0.9;
+    cursor: default;
+}
+
+button{
+    width:64px;
+    height:50px;
+    border-radius: 0;
+    font-size: 30px;
+    outline: none;
+    background-color: #E0E0E0;
+    font-family: "PingFang SC";
+    padding: 0;
+    border: 0;
+}
+
+/*添加按键点击变色效果*/
+button:active{
+    background-color: #b2b2b2;
+    color: #fff;
+}
+
+#numZero{
+    width:129px;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.operatorTop{
+    background-color: #d6d6d6;
+    font-size: 23px;
+}
+
+.operatorTop:active{
+    background-color: #a9a9a9;
+    color: #fff;
+}
+
+.operatorRight{
+    width:65px;
+    background-color: #f5923e;
+}
+
+#operatorInverse{
+    font-size: 20px;
+}
+
+.operatorRight:active {
+    background-color: #C2732F;
+    color: #fff;
+}

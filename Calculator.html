@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="StyleSheet/Calculator.css">
+    <title>计算器</title>
+</head>
+<body>
+    <!--我是标题-->
+    <h1>计算器</h1>
+    <!--计算器主体-->
+    <div class="calculator">
+        <table id="tableCalculator" border="1">
+            <!--显示行-->
+            <tr id="result">
+                <td colspan="4"><span id="resultNum">0</span></td>
+            </tr>
+            <!--按键窗口-->
+            <tr>
+                <td><button type="button" id="operatorSin" class="operatorTop" onclick="setOperation(5)">Sin</button></td>
+                <td><button type="button" id="operatorCos" class="operatorTop" onclick="setOperation(6)">Cos</button></td>
+                <td><button type="button" id="operatorSqrt" class="operatorTop" onclick="setOperation(7)">&radic;</button></td>
+                <td><button type="button" id="operatorInverse" class="operatorRight" onclick="setOperation(8)">1/X</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="operatorClear" class="operatorTop" onclick="clearAll()">AC</button></td>
+                <td><button type="button" id="operatorNegative" class="operatorTop" onclick="setNegative()">+/-</button></td>
+                <td><button type="button" id="operatorPercentage" class="operatorTop" onclick="setOperation(4)">%</button></td>
+                <td><button type="button" id="operatorDivide" class="operatorRight" onclick="setOperation(3)">&divide;</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="numSeven" onclick="setClickedNum(7)">7</button></td>
+                <td><button type="button" id="numEight" onclick="setClickedNum(8)">8</button></td>
+                <td><button type="button" id="numNine" onclick="setClickedNum(9)">9</button></td>
+                <td><button type="button" id="operatorTimes" class="operatorRight" onclick="setOperation(2)">&times;</button></td>
+            </tr>
+            <tr>
+                <td><button type="button" id="numFour" onclick="setClickedNum(4)">4</button></td>
+                <td><button type="button" id="numFive" onclick="setClickedNum(5)">5</button></td>
+                <td><button type="button" id="numSix" onclick="setClickedNum(6)">6</button></td>
+                <td><button type="button" id="operatorMinus" class="operatorRight" onclick="setOperation(1)">-</button></td>
+            </tr>
+            <tr>
+                <td ><button type="button" id="numOne" onclick="setClickedNum(1)">1</button></td>
+                <td><button type="button" id="numTwo" onclick="setClickedNum(2)">2</button></td>
+                <td><button type="button" id="numThree" onclick="setClickedNum(3)">3</button></td>
+                <td><button type="button" class="operatorRight" onclick="setOperation(0)">+</button></td>
+            </tr>
+            <tr class="Bot">
+                <td colspan="2" ><button type="button" id="numZero" onclick="setClickedNum(0)">0</button></td>
+                <td><button type="button" id="numDot" onclick="setDot()">.</button></td>
+                <td><button type="button" id="operatorEquals" class="operatorRight" onclick="getResult()">=</button></td>
+            </tr>
+        </table>
+
+    </div>
+    <script type="text/javascript" src="js/Calculate.js"></script>
+</body>
+</html>
